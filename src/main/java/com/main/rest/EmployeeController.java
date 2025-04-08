@@ -20,7 +20,9 @@ public class EmployeeController {
 
 	@Autowired
 	private EmployeeService employeeService;
-	
+
+	int y=100;	
+
 //====================================REGISTER EMPLOYEE========================================================================
 	@PostMapping(value = "/employees/register")
 	public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee)
